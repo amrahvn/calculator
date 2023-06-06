@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input, button {
+  outline: none;
+  height: 40px;
+  width: 14rem;
+  margin-top: 30px;
+  transition: 0.4s;
+  border: 2px solid black;
+  font-size: 22px;
+  text-align: center;
+}
+
+input:hover {
+  border: 3px solid red;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.common {
+  border: 4px solid red;
+  height: 16rem;
+  width: 60rem;
+  text-align: center;
+  margin: 40px 36rem;
+  background-color: aliceblue;
+}
+.common h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.common #res {
+  color: blue;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+}/*# sourceMappingURL=style.css.map */
