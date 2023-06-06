@@ -30,6 +30,7 @@ body {
   text-align: center;
   margin: 40px 36rem;
   background-color: aliceblue;
+  position: relative;
 }
 .common h1 {
   font-weight: bold;
@@ -46,4 +47,13 @@ body {
   font-weight: bold;
   font-size: 30px;
   margin-top: 20px;
+}
+
+.light {
+  border-radius: 100%;
+  width: 41px;
+  height: 42px;
+  top: -24px;
+  right: 12px;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
