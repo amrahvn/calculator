@@ -16,13 +16,12 @@ input,button{
    
 }
 
+
 input:hover{  
         border: 3px solid red;   
 }
 
-body{
-    background-color: antiquewhite;
-}
+
 
 .common{
     border: 4px solid red;
@@ -65,7 +64,81 @@ body{
     border-radius: 100%;
     width: 41px;
     height: 42px;
-    top: -24px;
+    top: 18px;
     right: 12px;
     position: absolute;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter {
+    font-size: 80px;
+    color: red;
+    opacity: 0;
+    animation: fade-in 2s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+#animatedText {
+    font-size: 48px;
+    animation: animateText 1s infinite;
+}
+
+@keyframes animateText {
+     0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: yellow; }
+   100% { color: orange; }
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
