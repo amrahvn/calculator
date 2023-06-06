@@ -8,6 +8,10 @@ btn.onclick=()=>{
      let num2=parseInt(document.getElementById('percentage').value+"%")
      let num3=parseInt(document.getElementById('monthly').value)
 
+     if (isNaN(num1) || isNaN(num2)||isNaN(num3)) {
+        document.getElementById("result").innerHTML = "Please,enter the number.";
+        return;
+    }
 
 
      let mebleg =num1*num2/100;

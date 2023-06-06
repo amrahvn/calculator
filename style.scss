@@ -26,12 +26,15 @@ body{
 
 .common{
     border: 4px solid red;
-    height: 16rem;
+    height: 22rem;
     width: 60rem;
     text-align: center;
     margin: 40px 36rem;
     background-color: aliceblue;
     position: relative;
+    .text{
+        margin-top: 60px;
+    }
     
     h1{
         font-weight: bold;
@@ -45,6 +48,12 @@ body{
         margin-top: 20px;
     }
     #um{
+        color: blue;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #result{
         color: blue;
         font-weight: bold;
         font-size: 30px;

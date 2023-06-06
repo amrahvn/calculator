@@ -25,12 +25,15 @@ body {
 
 .common {
   border: 4px solid red;
-  height: 16rem;
+  height: 22rem;
   width: 60rem;
   text-align: center;
   margin: 40px 36rem;
   background-color: aliceblue;
   position: relative;
+}
+.common .text {
+  margin-top: 60px;
 }
 .common h1 {
   font-weight: bold;
@@ -43,6 +46,12 @@ body {
   margin-top: 20px;
 }
 .common #um {
+  color: blue;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.common #result {
   color: blue;
   font-weight: bold;
   font-size: 30px;
