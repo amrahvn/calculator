@@ -7,9 +7,10 @@ btn.onclick=()=>{
      let num1=parseInt(document.getElementById('amount').value)
      let num2=parseInt(document.getElementById('percentage').value+"%")
      let num3=parseInt(document.getElementById('monthly').value)
+    //  let ico=document.getElementById('icon')
 
      if (isNaN(num1) || isNaN(num2)||isNaN(num3)) {
-        document.getElementById("result").innerHTML = "Please,enter the number.";
+        document.getElementById("result").innerHTML = "Please,enter the number. "+"  "+ '<i class="fa-regular fa-face-angry"></i>' ;   
         return;
     }
 
@@ -18,8 +19,8 @@ btn.onclick=()=>{
      let smebleg=num1+mebleg;
      let ayliqodeme=smebleg/num3
 
-   document.getElementById('um').innerHTML="amount to be paid:"+smebleg+"Azn" 
-   document.getElementById('res').innerHTML= "monthly payment:"+ ayliqodeme+"Azn" 
+   document.getElementById('um').innerHTML="amount to be paid:"+" "+smebleg+"Azn" + " "+'<i class="fa-regular fa-face-sad-cry"></i>'
+   document.getElementById('res').innerHTML= "monthly payment:"+" "+ ayliqodeme+"Azn"+ " "+'<i class="fa-regular fa-face-sad-tear"></i>' 
 }
 
 function light(){
