@@ -66,25 +66,3 @@ window.addEventListener('load', function() {
     }, 1000);
 });
 
-var animatedText = document.getElementById("animatedText");
-
-
-animatedText.classList.add("animated");
-
-
-animatedText.addEventListener("animationiteration", function() {
-    this.style.color = getRandomColor();
-});
-
-
-function getRandomColor() {
-    var letters = "0123456789ABCDEF";
-    var color = "#";
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-
-var circle = document.querySelector('.circle');
-
